@@ -27,7 +27,7 @@ const Login = () => {
         </div>
         <Link
           onClick={(e) => (!name || !room ? event.preventDefault() : null)}
-          to={`/chat?name=${name}&room=${room}`}
+          to={`/chat?name=${name}&room=${room }`}
         >
           <button className="btn mt-20" type="submit">
             Sign In
